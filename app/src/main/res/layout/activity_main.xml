@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/topLeftSettingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/topRightButtonLogout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_shape"
+        android:text="Log out"
+        android:textColor="@color/grey" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/mokap"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:src="@drawable/mokap"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mokap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Mykyta Fesenko"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Career"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Career"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Home_Adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Career"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Home Adress"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/viewmycontacts"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/view_profile_shape"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="VIEW MY CONTACTS"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Edit_profile"
+        android:layout_width="370dp"
+        android:layout_height="35dp"
+        android:layout_above="@id/viewmycontacts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_profile_shape"
+        android:gravity="center"
+        android:text="Edit profile"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/gotosettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Edit_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Go to settings and fill out the profile"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>
