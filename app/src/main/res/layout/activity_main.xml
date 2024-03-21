@@ -73,7 +73,6 @@
         android:layout_marginTop="20dp"
         android:text="Mykyta Fesenko"
         android:textColor="@color/white"
-        android:fontFamily="@font/crimsonpro_variablefont_wght"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
