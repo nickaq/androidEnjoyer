@@ -53,11 +53,12 @@
     <EditText
         android:id="@+id/EmailTextEditing"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="-13dp"
         android:layout_marginEnd="13dp"
         android:backgroundTint="@color/white"
-        android:inputType="text"
+        android:ems="16"
+        android:inputType="textEmailAddress"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/EmailTextView"
@@ -78,22 +79,25 @@
     <EditText
         android:id="@+id/PasswordTextEditing"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="-13dp"
         android:layout_marginEnd="13dp"
         android:backgroundTint="@color/white"
-        android:inputType="text"
+        android:ems="10"
+        android:inputType="textPassword"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/EmailTextView"
         app:layout_constraintTop_toBottomOf="@id/PasswordTextView" />
 
-    <CheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="false"
         android:text="Remember me"
         android:textColor="@color/grey"
         android:textSize="16sp"
+        app:buttonTint="@color/white"
         app:layout_constraintStart_toStartOf="@id/PasswordTextEditing"
         app:layout_constraintTop_toBottomOf="@id/PasswordTextEditing" />
 
@@ -101,6 +105,7 @@
         android:id="@+id/AlredyHaveAccTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
         android:text="Already have an account?"
         android:textColor="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -135,8 +140,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/RegisterButton"
-        android:layout_width="370dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/register_button_shape"
         android:gravity="center"
@@ -162,8 +169,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/GoogleButton"
-        android:layout_width="370dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/google_button_shape"
         android:gravity="center"
