@@ -38,7 +38,7 @@ class AuthActivity : AppCompatActivity() {
             // Email Validation
             val emailText = findViewById<EditText>(R.id.EmailTextEditing)
             val emailTextToString = emailText.text.toString()
-            val validationPattern = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}\$"
+            val validationPattern = "^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}\$"
             val isMatchEmail = Regex(validationPattern).matches(emailTextToString)
             if (!isMatchEmail) emailText.error = "test@gmail.com example"
 
@@ -56,7 +56,9 @@ class AuthActivity : AppCompatActivity() {
                 .trim()
                 .substringBefore("@")
                 .split(".")
-                .joinToString(" ") { word -> word.replaceFirstChar { it.uppercase() } }
+                .joinToString(" ") { word -> word
+                    .lowercase()
+                    .replaceFirstChar { it.uppercase() } }
             val intent = Intent(this, MainActivity::class.java)
             intent.putExtra("email", beforeParseEmail)
             startActivity(intent)

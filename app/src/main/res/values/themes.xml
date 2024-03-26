@@ -4,6 +4,7 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="fontFamily">@font/opensans</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="Theme.AndroidEnjoyer" parent="Base.Theme.AndroidEnjoyer" />
